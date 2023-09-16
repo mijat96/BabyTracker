@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SQLite;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace BabyTracker.Models
 {
     public class BabyEvent
     {
+        [PrimaryKey, AutoIncrement]
         public int Id { get; set; }
         public DateTime EventTime { get; set; }
         public string EventName { get; set; }
